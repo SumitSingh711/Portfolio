@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sumit Singh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sumit Singh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/profile.png" alt="Sumit Singh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sumit Singh</h1>
+        <p class="section__text__p2">Aspiring ML Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Sumit-Singh-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sumit-singh-0711/'"
+          />
+          <img
+            src="images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SumitSingh711'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="images/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Industrial Experience</h3>
+              <p>3+ years <br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Bachelors Degree(Computer Science & Engg.)<br/>Diploma</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>My journey began with a strong foundation in Mechanical Engineering, where I completed my diploma and started my career. I enjoyed solving technical problems and applying engineering principles, but as I worked, I found myself increasingly drawn to technology and programming. What started as a curiosity during my job slowly grew into a passion.</p>
+            <br>
+            <p>I began exploring coding in my free time, intrigued by how technology could be used to solve complex problems in innovative ways. The more I learned, the more I realized that my true interest lay in understanding how machines and algorithms could learn, adapt, and solve challenges autonomously. This growing fascination led me to shift my focus from mechanical systems to the world of computer science, machine learning, and artificial intelligence.</p>
+            <br>
+            <p>Driven by this new passion, I decided to pursue a Bachelor's degree in <b>Computer Science Engineering</b>. The transition wasn’t easy, but it was exactly what I needed. During my studies, I gained a solid understanding of algorithms, programming, and data-driven technologies. I started applying my engineering mindset to machine learning and AI, blending my problem-solving skills with cutting-edge technological tools.</p>
+            <br>
+            <p>Now, with a diverse background and a strong foundation in both fields, I am eager to make meaningful contributions to the tech industry, using my knowledge and passion for AI to drive innovation.</p>
+            <br>
+            <p>Early in my career, I worked on projects that fueled this passion—like building a driver drowsiness detection system that leveraged deep learning. Every line of code, every model tweak felt like a step closer to turning complex data into actionable insights. Along the way, I developed a car price prediction model that further refined my skills in Python, data analytics, and model deployment.</p>
+            <br>
+            <p>While I may not have extensive industrial experience in AI/ML, my personal projects have been my training ground. They’ve equipped me with the discipline, structure, and drive to grow in this field. Today, I’m more excited than ever to continue this journey, solving real-world challenges through the power of AI and machine learning.</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href=''"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Machine learning/Artificial intelligence</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Streamlit</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jupyter Notebook</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Seaborn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Deep Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tensorflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Keras</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="images/project-1.jpg" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommendor System</h2>
+              <div class="gist of project">
+              <p>This is developed with the TMDB dataset and deployed via Streamlit, suggests top 5 movies based on content similarities like genres, directors, and actors. Using content-based filtering, it delivers relevant recommendations, showcasing skills in data handling, machine learning, and deployment.</p>
+             </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SumitSingh711/Movie-Recommender-System'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://movie-recommender-system-iklvefy432sbxedwi3ttaz.streamlit.app/'"
+              >
+                Web App
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Thyroid Cancer Relapse Detection</h2>
+              <div class="gist of project">
+                <p>This project predicts thyroid cancer relapse in survivors using machine learning, classifying patients as at risk or not based on key health metrics like age, gender, and cancer stage. The model prioritizes recall to identify relapse cases and is deployed via Streamlit, offering real-time predictions for early intervention and treatment planning.</p>
+              </div>
+              <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SumitSingh711/Thyroid-cancer-detection'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://thyroid-cancer-detection-mehmkngabvohisubjwq422.streamlit.app/'"
+              >
+                Web App
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Email/SMS Spam Detector</h2>
+              <div class="gist of project">
+                <p>The Email/SMS Spam Detection project uses NLP to classify messages as spam or not, improving communication by filtering unwanted content. I trained machine learning models like Naive Bayes and SVM, evaluating their performance with precision, recall, and accuracy. Deployed with Streamlit, the interactive web app enables real-time spam predictions, highlighting my skills in NLP and application development.</p>
+              </div>
+              <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SumitSingh711/Email-SMS-spam-detection'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://email-sms-spam-detection-9o9nyfkatd8pqyvtskhcar.streamlit.app/'"
+              >
+                Web App
+              </button>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="images/project-4.jpg" alt="Project 4" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Plant-Disease-Prediction</h2>
+            <div class="gist of project">
+            <p>The Plant Disease Prediction project utilizes a Convolutional Neural Network (CNN) to identify diseases in plant leaves from images. By training the model on a dataset of plant disease images, the system can accurately classify different types of diseases, aiding farmers and agricultural experts in early detection. This project highlights my skills in deep learning, image processing, and practical applications of AI in agriculture.</p>
+           </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SumitSingh711/Plant-Disease-Prediction-Using-CNN'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="images/project-5.jpg" alt="Project 5" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Mobile Price Range Prediction</h2>
+            <div class="gist of project">
+            <p>
+              The Mobile Price Range Prediction project classifies phones into four distinct price categories based on technical features like RAM, battery power, and camera quality. Using Logistic Regression, the model was deployed via Streamlit for real-time predictions and user interaction. This project highlights valuable skills in machine learning, data analysis, and web app deployment.</p>
+           </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SumitSingh711/Mobile-Price-Range-Prediction'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://mobile-price-range-prediction-tquanbngnsmgqz6gejkcnd.streamlit.app/'"
+            >
+              Web App
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="images/project-6.jpg" alt="Project 6" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
+            <div class="gist of project">
+            <p>The Heart Disease Prediction project uses machine learning to assess the risk of heart disease based on health metrics like age, cholesterol, and blood pressure. A Random Forest classifier was chosen after testing various models, and the final model was deployed as an interactive Streamlit web app for real-time predictions. This project demonstrates skills in data preprocessing, model selection, and healthcare technology integration for early heart disease detection.</p>
+           </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/SumitSingh711/Heart-Disease-Prediction'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://heart-disease-prediction-xaavvcgce2wpmd4fay9wv4.streamlit.app/'"
+            >
+              Web App
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <img
+        src="images/down-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&to=sumitsingh1996.ss@gmail.com">sumitsingh1996.ss@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sumit-singh-0711/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sumit Singh All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

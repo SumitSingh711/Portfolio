@@ -43,7 +43,21 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Sumit Singh</h1>
-        <p class="section__text__p2">Aspiring ML Engineer</p>
+        <div class="container">
+          <h1>aspiring <span class="auto-type"></span> </h1>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+          var typed = new Typed(".auto-type",{
+            strings : ["AI Engineer", "Data Scientist", "ML Engineer"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            looped : true
+          })
+        </script>
+<!--        <p class="section__text__p2">Aspiring ML Engineer</p>-->
         <div class="btn-container">
           <button
             class="btn btn-color-2"

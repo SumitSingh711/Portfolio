@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumit Singh — Applied AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">SS</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Sumit Singh</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-summary">
+        Building production-ready AI systems — Computer Vision, LLMs, RAG pipelines,
+        and agentic workflows — from data to deployment.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="code-snippet">
+        <span class="cs-kw">from</span> ai <span class="cs-kw">import</span> future<br/>
+        <span class="cs-kw">import</span> vision, llm, rag<br/><br/>
+        <span class="cs-fn">build</span>(<span class="cs-str">"production"</span>,<br/>
+        &nbsp;&nbsp;stack=[vision, llm, rag])
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an <strong>Applied AI Engineer</strong> specialising in building production-ready
+            systems using <strong>Computer Vision, LLMs, and Generative AI</strong>. I work across
+            the full lifecycle — from data preparation and model development to deployment and scaling.
+          </p>
+          <p>
+            My expertise spans multi-modal pipelines (OCR + CV + LLM), RAG systems, and agentic
+            workflows. I have a strong background in real-time vision systems, model fine-tuning, and
+            edge deployment.
+          </p>
+          <p>
+            I'm proficient in productionising AI using <strong>FastAPI, Docker, and Azure</strong>,
+            with hands-on experience in model optimisation (ONNX, TensorFlow Lite, quantization) for
+            low-latency, scalable inference.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Production AI Systems</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Years in ML</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Cloud Deployments</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Lines of Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Machine Learning Engineer</h3>
+                <p class="job-company">Brightbots Private Limited &mdash; Gurugram, Haryana, India</p>
+              </div>
+              <span class="job-date">Feb 2025 &ndash; Present</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Developed and deployed production-grade AI systems, including single and multi-agent workflows using <strong>AutoGen</strong> with <strong>Azure AI Foundry</strong> models, automating data analysis across live streams, APIs, and internal databases.</li>
+              <li>Built intelligent vision-based applications — a <strong>PyQt6</strong> desktop tool for engineering layout analysis, converting PDFs to images, applying <strong>OpenCV</strong> and <strong>YOLO</strong> models, and generating annotated outputs with structured reports.</li>
+              <li>Implemented a multi-stage Computer Vision pipeline for solar panel inspection — combining panel classification, dirt detection, and object detection to identify debris and anomalies.</li>
+              <li>Designed end-to-end AI pipelines and <strong>FastAPI</strong>-based services for real-time image processing and inference, and developed RAG systems using vector databases and LLM pipelines.</li>
+              <li>Deployed scalable backend systems using <strong>FastAPI, MongoDB, Docker, and Nginx on Azure</strong> with CI/CD pipelines; optimised models via ONNX, TensorFlow Lite, and quantization.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">AutoGen</span><span class="tag">Azure AI</span><span class="tag">YOLO</span>
+              <span class="tag">OpenCV</span><span class="tag">FastAPI</span><span class="tag">RAG</span>
+              <span class="tag">Docker</span><span class="tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Machine Learning Intern</h3>
+                <p class="job-company">Brightbots Private Limited &mdash; Gurugram, Haryana, India</p>
+              </div>
+              <span class="job-date">Nov 2024 &ndash; Jan 2025</span>
+            </div>
+            <ul class="job-bullets">
+              <li>Explored and benchmarked YOLO architectures to evaluate performance trade-offs between accuracy and inference speed for real-world use cases.</li>
+              <li>Developed end-to-end object detection pipelines using <strong>TensorFlow and OpenCV</strong>, including image preprocessing (augmentation, resizing, normalisation) and postprocessing (NMS, bounding box refinement).</li>
+              <li>Applied YOLO models to real-world scenarios, handling noisy inputs such as rotated, blurred, and occluded images to improve model robustness.</li>
+              <li>Integrated trained models into OpenCV-driven applications, enabling real-time detection, visualisation, and live camera inference.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">YOLO</span><span class="tag">TensorFlow</span><span class="tag">OpenCV</span>
+              <span class="tag">Object Detection</span><span class="tag">Real-Time Inference</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🔍</span>
+            <span class="project-date">Mar 2025 &ndash; Present</span>
+          </div>
+          <h3 class="project-title">Vision-Based Quality Inspection System</h3>
+          <p class="project-desc">
+            Automated visual inspection system to detect critical components, verify orientation, and
+            identify defects by comparing test samples against a golden reference. Fine-tuned YOLO
+            models and implemented OpenCV pipelines for preprocessing, detection, and bounding box
+            visualisation. Integrated an LLM-based summarisation module via LangChain to generate
+            human-readable comparison reports. Deployed on Azure VMs using FastAPI and Nginx.
+          </p>
+          <div class="project-tags">
+            <span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">LangChain</span>
+            <span class="tag">FastAPI</span><span class="tag">Azure</span><span class="tag">Nginx</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <span class="project-date">Aug 2025 &ndash; Present</span>
+          </div>
+          <h3 class="project-title">AI-Agent System for Real-Time Data Analysis</h3>
+          <p class="project-desc">
+            Production-ready multi-agent system to automate analysis of live product data and internal
+            company databases. Built collaborative AI agents using AutoGen with Azure AI Foundry models,
+            enabling real-time and historical insights. Developed a FastAPI backend with MongoDB,
+            deployed on Azure VMs using Nginx and Uvicorn, with a CI/CD pipeline for automated releases.
+          </p>
+          <div class="project-tags">
+            <span class="tag">AutoGen</span><span class="tag">Azure AI Foundry</span><span class="tag">FastAPI</span>
+            <span class="tag">MongoDB</span><span class="tag">CI/CD</span><span class="tag">Multi-Agent</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📄</span>
+            <span class="project-date">May 2025 &ndash; Present</span>
+          </div>
+          <h3 class="project-title">Intelligent Document Analysis &amp; Annotation Tool</h3>
+          <p class="project-desc">
+            PyQt6-based desktop application to automate analysis of engineering and technical documents.
+            Converts PDFs into images, uses computer vision and OCR to detect structural elements,
+            applies rule-based and ML-based logic to group and analyse content, and generates annotated
+            PDFs and Excel summaries. Includes a manual intervention window for user-controlled annotation.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PyQt6</span><span class="tag">OCR</span><span class="tag">OpenCV</span>
+            <span class="tag">ML</span><span class="tag">PDF Processing</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">☀️</span>
+            <span class="project-date">Jan 2026 &ndash; Present</span>
+          </div>
+          <h3 class="project-title">AI-Based Solar Panel Inspection &amp; Fault Detection</h3>
+          <p class="project-desc">
+            Multi-stage Computer Vision system to automate solar panel inspection and maintenance
+            monitoring. Built a hierarchical pipeline with a panel classifier, dirt/soiling classification
+            model, and object detection for debris. Fine-tuned YOLO on custom datasets. Deployed on
+            Raspberry Pi for edge inference with ONNX and quantization for low-latency, on-device monitoring.
+          </p>
+          <div class="project-tags">
+            <span class="tag">YOLO</span><span class="tag">ONNX</span><span class="tag">Raspberry Pi</span>
+            <span class="tag">Edge Inference</span><span class="tag">Quantization</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💬</span>
+            <span class="project-date">Jan 2025 &ndash; Present</span>
+          </div>
+          <h3 class="project-title">RAG-Based Troubleshooting Assistant</h3>
+          <p class="project-desc">
+            Retrieval-Augmented Generation system to assist engineers in troubleshooting complex scenarios.
+            Connects vector databases, LangChain, and LLMs to retrieve relevant cases and generate
+            context-aware recommendations. Handles both historical records and streaming data. Backend
+            built with FastAPI and MongoDB, deployed on Azure VMs using Nginx.
+          </p>
+          <div class="project-tags">
+            <span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">Vector DB</span>
+            <span class="tag">FastAPI</span><span class="tag">MongoDB</span><span class="tag">Azure</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Core Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">AI / ML</h3>
+          <div class="skill-tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">AutoGen</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">YOLO</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">MLOps</span>
+            <span class="tag">Model Fine-Tuning</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Model Optimisation</h3>
+          <div class="skill-tags">
+            <span class="tag">ONNX</span>
+            <span class="tag">TensorFlow Lite</span>
+            <span class="tag">Quantization</span>
+            <span class="tag">Edge Deployment</span>
+            <span class="tag">Real-Time Detection</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend &amp; Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Azure AI Foundry</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Back-end Operations</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Data &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Vector Databases</span>
+            <span class="tag">Data Annotation</span>
+            <span class="tag">Data Preparation</span>
+            <span class="tag">Web Scraping</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Git</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-info">
+          <h3 class="edu-degree">Bachelor of Technology &mdash; Computer Science</h3>
+          <p class="edu-school">Lingaya's Vidyapeeth</p>
+          <span class="edu-date">Aug 2021 &ndash; Jul 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">
+        I'm open to new opportunities, collaborations, and interesting AI projects.
+        Feel free to reach out!
+      </p>
+      <div class="contact-links">
+        <a class="contact-card" href="mailto:sumitsingh1996.ss@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">sumitsingh1996.ss@gmail.com</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/sumit-singh-0711" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">sumit-singh-0711</span>
+          </div>
+        </a>
+        <a class="contact-card" href="tel:+919654339056">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91-9654339056</span>
+          </div>
+        </a>
+        <div class="contact-card no-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by <strong>Sumit Singh</strong> &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
